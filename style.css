@@ -1,1 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
+/* o box-sizing segue o mesmo pensamento. por padrão ele é content-box, mas quando a gente altera pra border-box a altura e largura são aplicadas pro elemento todo */
+
+header {
+    background-color: #29bc8e;
+    ;
+    color: rgb(235, 226, 244);
+    border: solid 2px rgb(238, 101, 251);
+    min-height: 10vh;
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    justify-items: end;
+    align-items: center;
+}
+
+/* button{
+    width: 20vw;
+}
+
+.classLogout{
+    grid-column: 2 a partir da 2ª coluna / span 2 ocupe 2 espaços;
+} */
+
+main {
+    display: grid;
+    grid-template-columns: 15% 1fr 15%;
+    height: 85vh;
+    background-color: #e5e5b4;
+    ;
+    color: #1b264c;
+}
+
+aside {
+    background-color: #a1dd93;
+    ;
+    padding: 20px;
+    color: #1b264c;
+}
+
+section {
+    padding: 20px;
+}
+
+.gallery {
+    display: grid;
+    /* grid-template-rows: 2; */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+footer {
+    background-color: #26b3b9;
+    ;
+    text-align: center;
+    color: #1b264c;
+    padding: 20px;
+}
+
+figure{
+    background-color: #a1dd9382;
+    color:#1b264c;
+    text-align: center;
+}
+
+img{
+    width: 100%
+    
+}
